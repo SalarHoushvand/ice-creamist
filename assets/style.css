@@ -1,0 +1,165 @@
+:root {
+    --magnolia: #F8E6FE;
+    --pastel-red: #FF6A6A;
+    --pastel-yellow: #FFF987;
+    --text-dark: #707070;
+    --white: #FFF;
+}
+
+body, 
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--magnolia);
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    color: var(--text-dark);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Umbrella */
+.nav-umbrella {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.nav-umbrella__item{
+    width: 50px;
+    height: 60px;
+    border-radius: 0 0 100px 100px;
+    flex-shrink: 0;
+}
+
+.nav-umbrella__item--white {
+    background: var(--white);
+}
+
+.nav-umbrella__item--red {
+    background: #FF6A6A;
+}
+
+/* Title */
+.title {
+    color: var(--pastel-red);
+    font-size: 18px;
+    margin-bottom: 70px;
+    display: none;
+}
+
+/* Ice cream */
+.ice-cream__container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.ice-cream__circle {
+    background: var(--pastel-yellow);
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ice-cream__cone {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.ice-cream__scoop{
+    position: absolute;
+    width: 140px;
+    z-index: 10;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ice-cream__scoop--two {
+    top: 42px;
+}
+
+.options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.options__text {
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.flavors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 30px;
+    row-gap: 40px;
+    column-gap: 28px;
+}
+
+.flavors__item {
+    background: var(--white);
+    border-radius: 20px;
+    position: relative;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flavors__item--img {
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+}
+
+.flavors__item--strawberry img {
+    width: 40px;
+}
+
+.flavors__item--watermelon img {
+    width: 40px;
+}
+
+.flavors__item--cupcake img {
+    width: 35px;
+}
+
+.flavors__item--name {
+    padding-left: 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.flavors__item--btn {
+    background: var(--pastel-red);
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+}
+
+.flavors__item--btn svg {
+    width: 30px;
+}

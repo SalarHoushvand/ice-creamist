@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,146 @@
     <title>IceCreamist - Ice cream selector with GSAP</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- umbrella -->
+        <div class="nav-umbrella">
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--white"></div>
+            <div class="nav-umbrella__item nav-umbrella__item--red"></div>
+        </div>
+        <!-- /umbrella -->
+        <!-- title -->
+        <div class="title">
+            <h1 class="title__text">Ice Creamist</h1>
+        </div>
+        <!-- /title -->
+        <!-- ice cream -->
+        <div class="ice-cream__container">
+            <div class="ice-cream__circle"></div>
+            <div class="ice-cream">
+                <img class="ice-cream__scoop ice-cream__scoop--one" src="./assets/images/scoop-strawberry.png"
+                    alt="scroop-one">
+                <img class="ice-cream__scoop ice-cream__scoop--two" src="./assets/images/scoop-chocolate.png"
+                    alt="scoope-two">
+                <img class="ice-cream__cone" src="./assets/images/cone.webp" alt="ice cream cone">
+            </div>
+        </div>
+        <!-- /ice cream -->
+        <div class="options">
+            <p class="options__text">Pick your yummies</p>
+            <div class="flavors">
+                <!-- flavor card -->
+                <div class="flavors__item flavours__item--banana">
+                    <img class="flavors__item--img" src="./assets/images/banana.svg" alt="flavor-banana">
+                    <span class="flavors__item--name">Banana</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                <!-- flavor card -->
+                <div class="flavors__item flavors__item--strawberry">
+                    <img class="flavors__item--img" src="./assets/images/strawberry.svg" alt="flavor-strawberry">
+                    <span class="flavors__item--name">Strawberry</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                 <!-- flavor card -->
+                 <div class="flavors__item flavors__item--watermelon">
+                    <img class="flavors__item--img" src="./assets/images/watemelon.svg" alt="flavor-watermelon">
+                    <span class="flavors__item--name">Watermelon</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                <!-- flavor card -->
+                <div class="flavors__item flavors__item--donut">
+                    <img class="flavors__item--img" src="./assets/images/donut.svg" alt="flavor-donut">
+                    <span class="flavors__item--name">Donut</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                 <!-- flavor card -->
+                 <div class="flavors__item flavors__item--chocolate">
+                    <img class="flavors__item--img" src="./assets/images/chocolate.svg" alt="flavor-chocolate">
+                    <span class="flavors__item--name">Chocolate</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                 <!-- flavor card -->
+                 <div class="flavors__item flavors__item--cupcake">
+                    <img class="flavors__item--img" src="./assets/images/cupcake.svg" alt="flavor-cupcake">
+                    <span class="flavors__item--name">Cupcake</span>
+                    <div class="flavors__item--btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
